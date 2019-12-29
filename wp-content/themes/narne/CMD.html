@@ -1,0 +1,555 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta name="viewport" content="widht=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Narne</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/template.css" rel="stylesheet" type="text/css">
+<!-- Menu -->
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<!-- Menu End -->
+<!-- Slider -->
+<link rel="stylesheet" type="text/css" href="css/styleSlider.css" />
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+<noscript><link rel="stylesheet" type="text/css" href="css/styleNoJS.css" /></noscript>
+<!-- Slider End -->
+<!-- News Ticker -->
+ <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/styles.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/tickerme.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#ticker').tickerme();
+	});
+	</script>
+<!-- News Ticker End -->
+<!-- Thumbnail Slider -->
+<link rel="stylesheet" href="css/example.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+<!-- Thumbnail Slider End -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/fresco.js"></script>
+<link rel="stylesheet" type="text/css" href="css/fresco.css" />
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.chairmanMessageDiv').hide();
+  $('.awardsDiv').hide();
+  $('#chairmanProfile').addClass("Selecteda");
+  $('#chairmanMessage').removeClass("Selecteda");
+  $('#awards').removeClass("Selecteda"); 
+}); 
+function tabChange(tabId){
+	//alert(tabId);
+	if(tabId=="chairmanProfile"){
+		 $('.chairmanProfileDiv').show();
+		 $('#chairmanProfile').addClass("Selecteda");
+		 $('#chairmanMessage').removeClass("Selecteda");
+         $('#awards').removeClass("Selecteda"); 
+		 $('.chairmanMessageDiv').hide();
+         $('.awardsDiv').hide();
+		}else if(tabId=="chairmanMessage"){
+		 $('.chairmanProfileDiv').hide();
+		 $('.chairmanMessageDiv').show();
+		 $('#chairmanMessage').addClass("Selecteda");
+		 $('#chairmanProfile').removeClass("Selecteda");
+         $('#awards').removeClass("Selecteda"); 
+         $('.awardsDiv').hide();
+		}else if(tabId=="awards"){
+		 $('.chairmanProfileDiv').hide();
+		 $('.chairmanMessageDiv').hide();
+         $('.awardsDiv').show();
+		 $('#awards').addClass("Selecteda");
+		 $('#chairmanMessage').removeClass("Selecteda");
+         $('#chairmanProfile').removeClass("Selecteda"); 
+		}
+	}
+</script>
+</head>
+<body>
+<div class="wraper">
+<header class="cd-main-header">
+<div style="float:left; z-index:99;"><a class="cd-logo" href="#0"><img src="images/logo.png" alt="Logo"></a></div>
+<ul class="cd-header-buttons">
+<li><a class="cd-search-trigger" href="#cd-search">Search<span></span></a></li>
+<li><a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a></li>
+</ul> <!-- cd-header-buttons -->
+</header>
+<main class="cd-main-content"><!-- your content here --></main>
+<div class="cd-overlay"></div>
+<nav class="cd-nav">
+<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+<li class="has-children"><a href="#">ABOUT Narne</a>
+<ul class="cd-nav-icons is-hidden">
+<li class="go-back"><a href="#0">Menu</a></li>
+<li class="see-all"><a href="#">Overview</a></li>
+<li><a class="cd-nav-item item-1" href="#"><h3>About us</h3><p>This is the item description</p></a></li>
+<li><a class="cd-nav-item item-2" href="#"><h3>Vision Mission</h3><p>This is the item description</p></a></li>
+<li><a class="cd-nav-item item-3" href="#"><h3>Reach US</h3><p>This is the item description</p></a></li></ul></li>
+<li class="has-children"><a href="#">PROJECTS</a>
+<ul class="cd-nav-icons is-hidden">
+<li class="go-back"><a href="#0">Menu</a></li>
+<li class="see-all"><a href="#">All Projects</a></li>
+<li><a class="cd-nav-item item-1" href="#"><h3>Project 1</h3><p>This is the item description</p></a></li>
+<li><a class="cd-nav-item item-2" href="#"><h3>Project 2</h3><p>This is the item description</p></a></li>
+<li><a class="cd-nav-item item-3" href="#"><h3>Project 3</h3><p>This is the item description</p></a></li>
+<li><a class="cd-nav-item item-4" href="#"><h3>Service #4</h3><p>This is the item description</p></a></li>
+<li><a class="cd-nav-item item-5" href="#"><h3>Service #5</h3><p>This is the item description</p></a></li>
+<li><a class="cd-nav-item item-6" href="#"><h3>Service #6</h3><p>This is the item description</p></a></li></ul></li>
+<li class="has-children"><a href="#">Services</a>
+<ul class="cd-nav-icons is-hidden">
+<li class="go-back"><a href="#0">Menu</a></li>
+<li class="see-all"><a href="#">Browse Services</a></li>
+<li><a class="cd-nav-item item-1" href="#"><h3>Service #1</h3><p>This is the item description</p></a></li>
+<li><a class="cd-nav-item item-2" href="#"><h3>Service #2</h3><p>This is the item description</p></a></li>
+<li><a class="cd-nav-item item-3" href="#"><h3>Service #3</h3><p>This is the item description</p></a></li></ul></li>
+<li class="has-children"><a href="#">Gallery</a>
+<ul class="cd-nav-gallery is-hidden">
+<li class="go-back"><a href="#0">Menu</a></li>
+<li class="see-all"><a href="#">Browse Gallery</a></li>
+<li><a class="cd-nav-item" href="#"><img src="CentralPark/menu1.jpg"><h3>CentralPark</h3></a></li>
+<li><a class="cd-nav-item" href="#"><img src="EastCity/menu2.jpg"><h3>EastCity</h3></a></li>
+<li><a class="cd-nav-item" href="#"><img src="GoldenHeights/menu3.jpg"><h3>GoldenHeights</h3></a></li>
+<li><a class="cd-nav-item" href="#"><img src="RollingMeadows/menu4.jpg"><h3>RollingMeadows</h3></a></li></ul></li>
+<li><a href="#">EVENTS</a></li>
+<li><a href="#">PAYMENTS</a></li></ul> <!-- primary-nav --></nav> <!-- cd-nav -->
+<div id="cd-search" class="cd-search"><form><input type="search" placeholder="Search..."></form></div>
+
+            <div class="FixedWrap">
+<div class="FixedWrapFloated">
+<ul>
+<li class="ContactIcon"><a href="#" class="ContactIcon">+ 91 - 1234567890</a></li>
+<li class="loginIcon"><a href="#" class="loginIcon">CUSTOMER login</a></li>
+<li class="EnqueryIcon"><a href="#" class="EnqueryIcon">ENQUIRY</a></li></ul></div></div>
+<div class="BodyContainer">
+<div class="innerpageheader">
+<div class="innerpage-banner"><img src="innerpageslides/overview.jpg" width="100%"></div>
+<div class="pageGrid">
+<ul>
+<li><a href="#">HOME</a></li>
+<li class="pagegridmargin">-</li>
+<li><a href="#">about us</a></li>
+<li class="pagegridmargin">-</li>
+<li><a href="#">Overview</a></li></ul></div>
+<div class="InnerpageBodyWraper">
+<div class="InnerPageLeftPannel">
+<div class="InnerPageLeftSubLinksPannel">
+<div class="InnerPageLeftSubLinksHeader">
+<ul>
+<li class="active">overview</li>
+<li><a href="#">Vission & Mission</a></li>
+<li><a href="#">Reach us</a></li></ul></div>
+<div class="InnerPageLeftSubLinksftr">
+<div class="InnerPageSocial">
+<ul>
+<li class="innerFb"><a href="#">&nbsp;</a></li>
+<li class="innergog"><a href="#">&nbsp;</a></li>
+<li class="innerin"><a href="#">&nbsp;</a></li>
+<li class="innertwt"><a href="#">&nbsp;</a></li>
+<li class="inneryt"><a href="#">&nbsp;</a></li></ul></div></div></div>
+<div class="InnerPageLeftSubLinksPannel">
+   <img src="images/Cmd.jpg" width="100%">
+   </div>
+<div class="InnerPageLeftSubLinksPannel">
+    <div class="ThumbInnerWrap">
+    <div id="slidezzzz">
+    <img src="GoldenHeights/example-slide-4.jpg">
+    <img src="GoldenHeights/example-slide-2.jpg">
+      <img src="GoldenHeights/example-slide-1.jpg">
+      <img src="GoldenHeights/example-slide-3.jpg">      
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>    </div>
+  <div class="ThumbnailStripz">ongoing Projects</div>
+          </div>
+   </div>
+<div class="InnerPageLeftSubLinksPannel">
+<div class="InnerPageLeftSubLinksHeader">
+<div id="slideshow">
+   <div>
+     East City
+   </div>
+   <div>
+	Grand View Jubilee Hills
+   </div>
+   <div>
+    Central Park/Rolling Meadows
+   </div>
+</div></div>
+<div class="InnerPageLeftSubLinksftr">
+<div class="InnerPageSocial">
+<span class="PlanHeader">Prestigious Projects</span></div></div></div>
+<div class="InnerPageLeftSubLinksPannel">
+<div class="InnerPageLeftSubLinksHeader awards-bg">
+<div id="slideshowA">
+   <div>
+    <img src="Awards/img1.jpg" width="100%" height="125">   </div>
+   <div>
+	<img src="Awards/img2.jpg" width="100%" height="125">   </div>
+   <div>
+<img src="Awards/img3.jpg" width="100%" height="125">   </div>
+      <div>
+<img src="Awards/img4.jpg" width="100%" height="125">   </div>
+   <div>
+<img src="Awards/img5.jpg" width="100%" height="125">   </div>
+</div></div>
+<div class="InnerPageLeftSubLinksftr">
+<div class="InnerPageSocial">
+<span class="PlanHeader">AWARDS</span></div></div></div>
+
+<div class="NewsLetterWrapInner"><input type="text" value="subscribe for newsletter"><input type="submit" class="submitBtn" value=""></div>
+
+</div>
+<div class="InnerpageBodyRightPannel">
+<div class="InnerpageBodyRightInnerPannel">
+<div class="cd-tabs">
+	<nav class="InnerpageTabHeder">
+		<ul class="cd-tabs-navigation">
+			<li><a data-content="overview" href="#0">overview</a></li>
+			<li><a data-content="cmd" class="selected" href="#0">CMD</a></li>
+		</ul> <!-- cd-tabs-navigation -->
+	</nav>
+
+<ul class="cd-tabs-content">
+<li data-content="cmd" class="selected" style="color:#fff;">
+<div class="InnerSubTabbed">
+<span class="TextLinkz"><a href="#0" onClick="tabChange(this.id)" id="chairmanProfile">Chairman Profile</a></span><span class="TextLinkz"><a href="#0" onClick="tabChange(this.id)" id="chairmanMessage">Chairman Message</a></span><span class="TextLinkz"><a href="#0" onClick="tabChange(this.id)" id="awards">AWARDS</a></span></div>
+<div class="chairmanProfileDiv" id="chairmanProfileDiv">
+<div class="InnerPageTabedBodyPannel">
+<div class="InnerPagerTabbedHeader">
+<div class="InnerPagerTabbedHeaderImg"><img src="images/Title.jpg"></div>
+<div class="InnerPagerTabbedHeaderContent"><p>Chairman Profile A true soldier, a visionary, a great leader and a Gandhian, Colonel [Retd] Narne Ranga Rao was born in the well-known family of Narnes of Andhra Pradesh in 1943. His grandfather was honored with the title of  “Rao Bahadur” and his father served in the Indian Army during World War II. In due course of time he completed his graduation in engineering and joined the Indian Army in 1964 in the Corps of Electrical and Mechanical Engineers. He was fortunate to have firsthand war experience in the 1971 Indo-Pak War.</p>
+
+<p><span class="ParaMiddle">War trophy : A T -59 Pakistani tank captured in enemy territory & driven back personally by Capt. (then) NARNE RANGA RAO.during the 1971 INDO - PAK  WAR</span></p>
+<p>Having experienced the traumas and horrors of active combat, he views life from a special perspective, based on extra special relationships that develop between comrades-in-arms during war. He had 23 years of rich and varied experience, including combat experience, in the Corps of EME of the Indian Army before premature retirement in 1987. A thorough professional, he was recommended for the award of “VIR CHAKRA” for showing exemplary courage during the 1971 Indo-Pak War. He witnessed the selfless devotion to duty of his fellow servicemen, who made the supreme sacrifice to safeguard the motherland. He made his immediate resolve, right on the battlefield, to do everything possible towards rehabilitation and welfare of his brothers-in-arms and their dependents.</p>
+
+<p>It was this experience and resolve, which prompted him to float “Gunrock Enclave Co-operative Housing Society” in 1977 while he was posted at MCEME Secunderabad, to provide house plots to the defence personnel. The 36 acres of land was distributed among 228 defence personnel at Rs. 53/- per square yard, inclusive of all development works, i.e., water, electricity, sewerage, avenue plantation etc., with adequate open spaces for gardens, recreation facilities, etc. The cost of this land today is a whopping Rs. 42,000/- per square yard !!! more than 800 times in approximately 30 years.</p>
+
+<p>The news of the success of this venture travelled fast in the defence circles and colleagues requested him to take up the job of providing house plots to more defence personnel, who had no time of their own to search and purchase house plots during their short leave periods. Colonel [Retd] Narne Ranga Rao finally bowed to the wishes of his colleagues and took premature retirement from the army to devote himself fully for the welfare of defence personnel by providing them house plots.</p></div></div></div>
+</div>
+<div class="chairmanMessageDiv" id="chairmanMessageDiv">
+<div class="InnerPageTabedBodyPannel">
+<div class="InnerPagerTabbedHeader">
+<div class="InnerPagerTabbedHeaderImg"><img src="images/Title.jpg"></div>
+<div class="InnerPagerTabbedHeaderContent"><h1 class="TitleInnerpage">Dear Friends,</h1><p>It gives me immense pleasure to greet you and your family members a very happy and prosperous New Year 2006, on behalf of all of us at Narne Group.  May God Almighty shower his choicest blessings on you and your family members and grant you, peace, prosperity and tranquility in life.</p>
+
+<p><span class="ParaMiddle">War trophy : A T -59 Pakistani tank captured in enemy territory & driven back personally by Capt. (then) NARNE RANGA RAO.during the 1971 INDO - PAK  WAR</span></p>
+<p>You will be glad to note that Hyderabad has recorded all round progress in all spheres and has been recognized as the most progressive city the world over. </p>
+
+<p>In order to ease the pressure on the main city, the Government has improved the commutation facility by introducing a metro rail system. The first phase has been completed and the second phase is in progress. The second phase will cover Bibinagar also, wherein our project <span class="hightText">East City</span> is located. Andhra Pradesh has established world class games stadia all around Hyderabad and Secunderabad. The 32nd National Games were conducted in December 2002 and the Afro-Asian Games from 24th October to 1st November 2003.  Participants for these games from across the globe were all praise for the facilities as well as hospitality extended to them.  Hyderabad will also be hosting the World Military Games in 2007 and may also host the next Commonwealth Games in 2010. </p>
+
+<p>In the field of Information Technology, Hyderabad has captured a sizeable market. Industrial giants from abroad have established their units at Hyderabad.  Thus, the Hi-Tec city has been created and is growing rapidly.  All these improvements have created a fair amount of job opportunities and the influx of people to Hyderabad has been steadily increasing. This has created a demand for more residential accommodation. This demand has made <span class="hightText">Narne Estates,</span> the leading real estate developer, to venture into the construction arena. We have undertaken the first housing venture at Medchal, a suburb of Hyderabad.</p>
+
+<p>This project will provide flats, independent houses and commercial complexes. The infrastructure will be world class at affordable prices.  This project called <span class="hightText">Golden Heights Residency</span> is abutting National Highway 7 with good commutation facilities, both rail and road, whereby one may reach the heart of the city in 25 minutes.</p>
+
+<p>The Government of Andhra Pradesh in collaboration with few Singapore firms have commenced construction of 2000 flats on the Warangal Highway short of Bibinagar.  The construction has already commenced and all the flats have been booked by the intending purchasers. Thus, there is more activity on the Warangal highway. The members of <span class="hightText">East City</span> will be happy to note that with the establishment of the multi modal rail system, Singapore Township coming up, Bharat Petroleum establishing their bulk petrol depot, the demand for land on this route is increasing and thus <span class="hightText">East City</span> will certainly become the Chandigarh of the South in the near future. </p>
+
+<p>With this all round development taking place in and around Hyderabad, and the increasing demand for land for residential purposes, there is an immense potential of increased returns on investment in lands.  It is time for investment at Hyderabad in real estate properties and to earn manifold returns in a short time.</p>
+
+<p>I would like to assure all that <span class="hightText">Narne Estates</span> will render loving care and concern towards all those who have come together by investing in various <span class="hightText">Narne Projects</span> and assure them of manifold benefits on their investment.</p>
+
+<p>Once again, I wish you and your family “a Happy & Prosperous Near Year”.</p>
+<div class="SignatureWraper">With best wishes and regards, <br>
+Col. (Retd.) Narne Ranga Rao<br>
+Chairman<br>
+Narne Group of Companies
+</div></div></div></div>
+</div>
+<div class="awardsDiv" id="awardsDiv">
+<div class="InnerPagerTabbedHeaderFullContent">
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Udyog Ratan Award.</span></p>
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Manav Seva Puraskar.</span></p>
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Transworld Goldstar Glory of India - International Award.</span></p>
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Certificate for Fair Business Practices.</span></p>
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Certificate of Excellence (for productivity, quality customer service and innovative Management).</span></p>
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Chief Patron and Founder President of Andhra Pradesh Real Estate Developers Association (APREDA).</span></p>
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Founder & Governing Council Member of National Real Estate Development Council (NAREDCO).</span></p>
+<div class="AwardsWraper">
+<div class="AwardPannel"><a href="Awards/Award1b.png" class="lightbox_trigger"><img src="Awards/Award1s.png"></a></span>
+<div class="ZoomIcon"></div></div>
+<div class="AwardPannel"><a href="Awards/Award2b.png" class="lightbox_trigger"><img src="Awards/Award2S.png"></a></span>
+<div class="ZoomIcon"></div></div>
+<div class="AwardPannel"><a href="Awards/Award3b.png" class="lightbox_trigger"><img src="Awards/Award3s.png"></a></span>
+<div class="ZoomIcon"></div></div>
+<div class="AwardPannel"><a href="Awards/Award4b.png" class="lightbox_trigger"><img src="Awards/Award4s.png"></a></span>
+<div class="ZoomIcon"></div></div>
+<div class="AwardPannel"><a href="Awards/Award5b.png" class="lightbox_trigger"><img src="Awards/Award5.png"></a></span>
+<div class="ZoomIcon"></div></div>
+</div></div>
+</div>
+</li>
+<li data-content="overview">
+			<h1 class="TitleInnerpage">Genesis</h1><p>The domain of Real Estate nearly three decades ago was notorious for its murky wheeling – dealing practices and short changing of customers. The entry of Narne Estates into this field came like a gust of fresh air. Narne Estates with its penchant for ethical business practices and uncompromisingly rigid stance on principles blew away the cobwebs of mistrust and gave this industry the respectability it was lacking. No wonder it is said that Narne's 'Redefined Real Estate'.</p><h1 class="TitleInnerpage">The Midas Touch</h1><p>Narne Estates is famous for its ‘Midas Touch’. Each venture of Narne Estates has turned out to be a gold mine for its customers. Farsightedness with an uncanny knack of identifying potential prime properties has assured our customers a ‘Win-Win’ situation – always and every time.</p><h1 class="TitleInnerpage">Real Estate with Real Values</h1><p>SMART is what we at Narne Estates believe in. Sincerity, Morality, Accountability, Responsiveness and Transparency are the core values which guide each and every transaction at Narne Estates. So when you think of Real Estate with Real Values, think of Narne Estates.</p><h1 class="TitleInnerpage">Jewels in the Narne Estates Crown</h1>
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Golden Heights Residency:</span> The Kohinoor of the Real Estate World.</p>
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Grand View Jubilee Hills:</span> Hill top plots for those on the top.
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Central Park:</span> Ecologically charged, Technologically Driven.
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Rolling Meadows:</span> For the tranquil experience.</p>
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">East City:</span> Discover clean air, green trees, even wilderness in the city.</p>
+<p class="listStyleHeading" style="margin-bottom:17px;"><span class="HeadingTitle">Jade Gardens:</span> Your Paradise on Earth.</p>
+<h1 class="TitleInnerpageW">NARNE GROUP OF COMPANIES</h1><h1 class="TitleInnerpage">Narne Publications</h1><p>It is the sole distributor for Andhra Pradesh (except twin cities) of Employment News, one of the most widely circulated employment related weeklies. It is also the sole distributor of the AP Journal as well as for Government of India and Parliamentary Publications.</p><h1 class="TitleInnerpage">Narne Aquamarine Estates Ltd.</h1><p>This is a 100% Export Oriented Unit (EOU) with extensive growth ponds for rearing Black Tiger Shrimp and is located at Vutukur Village in Nellore District of Andhra Pradesh.</p><h1 class="TitleInnerpage">Narne Constructions Pvt Ltd.</h1><p>As a natural extension of the activities of Narne Estates, this company has been established to undertake all construction work for the jewels in the crown of Narne Estates.</p><h1 class="TitleInnerpage">Market Space Systems Pvt Ltd.</h1><p>Marketspace Systems Pvt Ltd., was established in 1999 as the software arm of the Narne Group of Companies as part of our diversification strategy. The company has worked on projects involving technologies for various industry verticals and has successfully implemented projects involving the latest technologies for several top notch organizations. Located in the corporate office premises, this spacious centrally air-conditioned facility has state of the art equipment and has wireless Local Area Networks.</p><h1 class="TitleInnerpage">Our Invaluable Asset</h1><p>Our most invaluable asset is our highly dedicated team of staff members for whom the work at Narne's is not just a job but a mission. It is this missionary zeal which has enabled the Narne Group to grow from strength to strength.</p>
+		</li>
+<!--
+		<li data-content="settings">
+			<p>Settings Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nam magni, ullam nihil a suscipit, ex blanditiis, adipisci tempore deserunt maiores. Nostrum officia, ratione enim eaque nihil quis ea, officiis iusto repellendus. Animi illo in hic, maxime deserunt unde atque a nesciunt? Non odio quidem deserunt animi quod impedit nam, voluptates eum, voluptate consequuntur sit vel, et exercitationem sint atque dolores libero dolorem accusamus ratione iste tenetur possimus excepturi. Accusamus vero, dignissimos beatae tempore mollitia officia voluptate quam animi vitae.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ipsam eum reprehenderit minima at sapiente ad ipsum animi doloremque blanditiis unde omnis, velit molestiae voluptas placeat qui provident ab facilis.</p>
+		</li>
+
+		<li data-content="trash">
+			<p>Trash Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque a iure nostrum animi praesentium, numquam quidem, nemo, voluptatem, aspernatur incidunt. Fugiat aspernatur excepturi fugit aut, dicta reprehenderit temporibus, nobis harum consequuntur quo sed, illum.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima doloremque optio tenetur, natus voluptatum error vel dolorem atque perspiciatis aliquam nemo id libero dicta est saepe laudantium provident tempore ipsa, accusamus similique laborum, consequatur quia, aut non maiores. Consectetur minus ipsum aliquam pariatur dolorem rerum laudantium minima perferendis in vero voluptatem suscipit cum labore nemo explicabo, itaque nobis debitis molestias officiis? Impedit corporis voluptates reiciendis deleniti, magnam, fuga eveniet! Velit ipsa quo labore molestias mollitia, quidem, alias nisi architecto dolor aliquid qui commodi tempore deleniti animi repellat delectus hic. Alias obcaecati fuga assumenda nihil aliquid sed vero, modi, voluptatem? Vitae voluptas aperiam nostrum quo harum numquam earum facilis sequi. Labore maxime laboriosam omnis delectus odit harum recusandae sint incidunt, totam iure commodi ducimus similique doloremque! Odio quaerat dolorum, alias nihil quam iure delectus repellendus modi cupiditate dolore atque quasi obcaecati quis magni excepturi vel, non nemo consequatur, mollitia rerum amet in. Nesciunt placeat magni, provident tempora possimus ut doloribus ullam!</p>
+		</li>-->
+	</ul> <!-- cd-tabs-content -->
+</div></div></div></div></div>
+
+    </div>
+</div>
+</div>
+<div class="footerWraper">
+<div class="footerInnerWraper">
+<div class="FooterLinksWraper">
+<div class="FooterLinksInnerWraper">
+<ul>
+<li class="FooterTitle">quick links</li>
+<li class="FTRLink"><a href="#">home</a></li>
+<li class="FTRLink"><a href="#">about us</a></li>
+<li class="FTRLink"><a href="#">Contact us</a></li>
+<li class="FTRLink"><a href="#">events</a></li>
+<li class="FTRLink"><a href="#">gallery</a></li>
+<li class="FTRLink"><a href="#">news</a></li>
+</ul></div></div>
+<div class="FooterLinksWraper">
+<div class="FooterLinksInnerWraper">
+<ul>
+<li class="FooterTitle">pROJECTS</li>
+<li class="BrowseLink"><a href="#" class="BrowseLink">Browse all</a></li>
+<li class="FTRLink"><a href="#">completed</a></li>
+<li class="FTRLink"><a href="#">ongoing</a></li>
+<li class="FTRLink"><a href="#">upcoming</a></li>
+</ul></div></div>
+<div class="FooterLinksWraper">
+<div class="FooterLinksInnerWraper">
+<ul>
+<li class="FooterTitle">Gallery</li>
+<li class="BrowseLink"><a href="#" class="BrowseLink">Browse all</a></li>
+<li class="FTRLink"><a href="#">completed</a></li>
+<li class="FTRLink"><a href="#">ongoing</a></li>
+<li class="FTRLink"><a href="#">upcoming</a></li>
+</ul></div></div>
+<div class="FooterLinksWraper EventsMargin">
+<div class="FooterLinksInnerWraper">
+<ul>
+<li class="FooterTitle">EVENTS</li>
+<li class="BrowseLink"><a href="#" class="BrowseLink">Browse all</a></li>
+<li class="FTRLink"><a href="#">LOSUM dAMMY</a></li>
+<li class="FTRLink"><a href="#">LOSUM dAMMY</a></li>
+<li class="FTRLink"><a href="#">LOSUM dAMMY</a></li>
+</ul></div></div>
+<div class="FooterLinksWraper-lastchild EventsMargin">
+<div class="FooterLinksInnerWraper">
+<ul>
+<li class="FooterTitle">Contact us</li>
+<li class="FTRLink"><p class="BodyWrapP">9001 losum dammy, street 6 Hyderabad, Telangana, <br> ph: +91 - 1234567890 ,  +91 - 1234567890 <br><br>More Branches...<br><span class="placesLink"><a href="#" class="placesLink">Bangalore</a> | <a href="#" class="placesLink">Chennai</a> | <a href="#" class="placesLink">Goa</a> | <a href="#" class="placesLink">Hyderabad</a> | <a href="#" class="placesLink">Kochin</a> | <a href="#" class="placesLink">Mangalore</a> | <a href="#" class="placesLink">Mysore</a></span></p></li>
+</ul></div></div></div></div>
+<div class="ftr2">
+<ul>
+<li><a href="#">ABOUT</a></li>
+<li><a href="#">projects</a></li>
+<li><a href="#">SERVICES</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#"> EVENTS</a></li>
+<li><a href="#">ADVERTISE</a></li>    
+<li><a href="#">TERMS OF USE & PRIVACY</a></li>     
+<li><a href="#">HElp</a></li></ul></div>
+<div class="ftr3">
+<div class="ftr3-InnerWraper">
+<div class="ftr3-LeftWrap">
+<div class="ftr3-LeftWrap-TextWrap"><span class="ftr3-LeftWrap-TextWrap">Designed and developed by</span></div>
+<div class="ftr3-LogoWrap"><a href="#">&nbsp;</a></div></div>
+<div class="ftr3-CenterWrap">© narne Estate 2015. All Rights Reserved.</div>
+<div class="SocialContainer">
+<div class="SocialTxtContainer">
+<div class="SocialTxtInnerContainer">Follow us &nbsp;</div>
+<div class="SocialWraper"><a href="#"><img src="images/fb.png"></a>&nbsp;<a href="#"><img src="images/twt.jpg"></a>&nbsp;<a href="#"><img src="images/gp.jpg"></a></div></div></div></div></div>
+</div>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/Tabbed.js"></script> 
+<script type="text/javascript">
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+</script>
+<script type="text/javascript">
+$("#slideshowA > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshowA > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshowA');
+},  3000);
+</script>
+<!--Slider -->
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		</script>
+<!--Slider End -->
+<!-- Menu -->    
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<!-- Menu End -->
+<!-- ThumbSlider -->
+   <script src="js/jquery.slides.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slidez').slidesjs({
+        width: 940,
+        navigation: false
+      });
+    });
+
+$(function() {
+      $('#slidezz').slidesjs({
+        width: 940,
+        navigation: false
+      });
+    });
+	$(function() {
+      $('#slidezzz').slidesjs({
+        width: 940,
+        navigation: false
+      });
+    });
+	$(function() {
+      $('#slidezzzz').slidesjs({
+        width: 940,
+        navigation: false
+      });
+    });
+	$(function() {
+      $('#slidezzzzz').slidesjs({
+        width: 940,
+        navigation: false
+      });
+    });
+  </script>
+<!-- Thumb Slider End -->
+<!-- News Ticker -->
+   <script type="text/javascript">
+// <!--
+var speed = 2;
+function init(){
+  var el = document.getElementById("marquee_replacement");
+  el.style.overflow = 'hidden';
+  scrollFromBottom();
+}
+ 
+var go = 0;
+var timeout = '';
+function scrollFromBottom(){
+  clearTimeout(timeout);
+  var el = document.getElementById("marquee_replacement");
+  if(el.scrollTop >= el.scrollHeight-150){
+    el.scrollTop = 0;
+  };
+  el.scrollTop = el.scrollTop + speed;
+  if(go == 0){
+    timeout = setTimeout("scrollFromBottom()",50);
+  };
+}
+ 
+function stop(){
+  go = 1;
+}
+ 
+function startit(){
+  go = 0;
+  scrollFromBottom();
+}
+// -->
+</script>
+<!-- News Ticker End -->
+
+</body>
+</html>
